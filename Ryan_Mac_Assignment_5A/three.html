@@ -71,26 +71,31 @@
         // Define Rectangular Base (Box)
         const boxGeometry = new THREE.BoxGeometry( 16, 1, 10 );
         const boxTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
+        // const boxTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
         shapes.push(makeInstance( boxGeometry, boxTexture, 0, -6, -5));
 
         // Define Base Cover
         const coverGeometry = new THREE.BoxGeometry( 15.8, 1, 9.8 );
-        const coverTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Galaxy.jpg")});
+        const coverTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("./Galaxy.jpg")});
+        // const coverTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Galaxy.jpg")});
         shapes.push(makeInstance( coverGeometry, coverTexture, 0, -6, -5));
 
         // Define Start Button Area
         const startGeometry = new THREE.BoxGeometry( 3, 0.5, 1 );
-        const startTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
+        const startTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("./Dark_Grey_Plastic.jpg")});
+        // const startTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
         shapes.push(makeInstance( startGeometry, startTexture, 0, -5.7, -8));
 
         // Define Joystick Rod (Cycliner)
         const rodGeometry = new THREE.CylinderGeometry( 0.3, 0.3, 3, 8, 1 );
-        const rodTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Metal.jpg")});
+        const rodTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("./Metal.jpg")});
+        // const rodTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Metal.jpg")});
         shapes.push(makeInstance( rodGeometry, rodTexture, -4, -4, -5));
 
         // Define Joystick Top (Sphere)
         const ballGeometry = new THREE.SphereGeometry( 1.5, 10, 10);
-        const ballTexture = new THREE.MeshBasicMaterial({ map : loadColorTexture("../resources/Red_Plastic.jpg")});
+        const ballTexture = new THREE.MeshBasicMaterial({ map : loadColorTexture("./Red_Plastic.jpg")});
+        // const ballTexture = new THREE.MeshBasicMaterial({ map : loadColorTexture("../resources/Red_Plastic.jpg")});
         shapes.push(makeInstance( ballGeometry, ballTexture, -4, -2, -5));
     
         // Define Low Battery Light
