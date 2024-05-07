@@ -19,7 +19,8 @@
 <body>
     Ryan Mac  rvmac@ucsc.edu<br/>
     Notes to Grader: <br/>
-    Animation is Unimplemented <br/>
+    Animation and Object is Unimplemented <br/>
+    Textures load from a folder different from submission to load in GitHub<br/>
     <canvas id="c"></canvas>
 </body>
 <script type="importmap">
@@ -70,7 +71,7 @@
 
         // Define Rectangular Base (Box)
         const boxGeometry = new THREE.BoxGeometry( 16, 1, 10 );
-        const boxTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
+        const boxTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("./Dark_Grey_Plastic.jpg")});
         // const boxTexture = new THREE.MeshBasicMaterial({map : loadColorTexture("../resources/Dark_Grey_Plastic.jpg")});
         shapes.push(makeInstance( boxGeometry, boxTexture, 0, -6, -5));
 
